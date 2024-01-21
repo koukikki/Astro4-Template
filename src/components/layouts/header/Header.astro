@@ -1,0 +1,33 @@
+---
+const isHomePage = () => {
+  return Astro.url.pathname === '/';
+};
+---
+
+<header>
+  {
+    isHomePage() ? (
+      <h1 class="title">
+        <a href="/">テンプレート</a>
+      </h1>
+    ) : (
+      <p class="title">
+        <a href="/">テンプレート</a>
+      </p>
+    )
+  }
+</header>
+
+<style lang="scss">
+  header {
+    padding: 20px;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--black);
+  }
+</style>

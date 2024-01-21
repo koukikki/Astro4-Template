@@ -1,0 +1,21 @@
+@import 'node_modules/the-new-css-reset/css/reset.css';
+
+:root {
+  --white: #ffffff;
+  --black: #333333;
+  --gray: #666666;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: auto;
+}

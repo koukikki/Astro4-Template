@@ -1,0 +1,37 @@
+---
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout title="TOPページ" description="TOPページ">
+  <div>TOPページ</div>
+</Layout>
+
+<style lang="scss">
+  div {
+    @include inner;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+  }
+
+  article {
+    display: grid;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  a {
+    display: contents;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 12px;
+    color: #666;
+  }
+</style>

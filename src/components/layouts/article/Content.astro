@@ -1,0 +1,41 @@
+---
+interface Props {
+  setting: string;
+}
+
+const { setting } = Astro.props;
+---
+
+<div set:html={setting} />
+
+<style lang="scss">
+  div {
+    margin-top: 40px;
+  }
+
+  p {
+    background-color: bar(--black);
+    color: #fff;
+  }
+
+  pre {
+    background-color: bar(--black);
+    color: #fff;
+  }
+</style>
+
+<style lang="scss" is:global>
+  .content {
+    margin-top: 40px;
+  }
+
+  .content p {
+    background-color: var(--black);
+    color: #fff;
+  }
+
+  .content pre {
+    background-color: var(--black);
+    color: #fff;
+  }
+</style>
